@@ -20,3 +20,6 @@ IP67 Rated Enclosure
 6:   Pink:    Power-
 7:   Blue:    RS-485B
 8:   Red:     RS-485A
+
+Datasheet:   https://drive.google.com/open?id=1zUHreeXlccUIJ7Tck0rMxPxAnnGq5xU3&usp=drive_fs
+User Guide:  https://drive.google.com/open?id=1gwFRgFM3ctGpisjqQdngUx7NupQfWxnc&usp=drive_fs
