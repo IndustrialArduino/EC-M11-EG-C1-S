@@ -170,3 +170,4 @@ void loop() {
   // Transmit unconfirmed message (set confirmed to false)
   LMIC_setTxData2(1, mydata, sizeof(mydata) - 1, true);
   os_runloop_once();
+}

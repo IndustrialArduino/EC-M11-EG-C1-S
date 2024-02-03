@@ -5,9 +5,10 @@
  * 12V Booster Enable / Disable
  * 
  */
-#include <Adafruit_ADS1X15.h> 
 
-Adafruit_ADS1115 ads1;
+#include <Adafruit_ADS1015.h>
+
+Adafruit_ADS1115 ads1(0x49);
 String adcString[8];
 
 
@@ -21,14 +22,18 @@ void setup() {
   
   pinMode(35, INPUT);    // Digital Input 1
   pinMode(34, INPUT);    // Digital Input 2
+
   pinMode(21, INPUT);    // ADS1115 Interrupt
+    
   pinMode(13, OUTPUT);    // RS-485 flow control
+  
   digitalWrite(13, HIGH);
   
   ads1.begin();
   ads1.setGain(GAIN_ONE);
 
   Serial.println("Initialized analog inputs");
+
 }
 
 void loop() {
